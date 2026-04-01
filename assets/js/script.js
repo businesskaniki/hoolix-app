@@ -63,7 +63,19 @@ const headerActive = function () {
 
 addEventOnElem(window, "scroll", headerActive);
 
+document.querySelectorAll('.has-dropdown > a').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    this.nextElementSibling.classList.toggle('active');
+  });
+});
 
+const btn = document.getElementById('howItWorksBtn');
+const content = document.getElementById('howItWorksContent');
+
+btn.addEventListener('click', () => {
+  content.classList.toggle('active');
+});
 
 /**
  * accordion toggle
@@ -74,3 +86,13 @@ const accordionAction = document.querySelectorAll("[data-accordion-action]");
 const toggleAccordion = function () { this.classList.toggle("active"); }
 
 addEventOnElem(accordionAction, "click", toggleAccordion);
+
+
+
+document.querySelectorAll('.read-more-btn').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const card = btn.closest('.service-card');
+    card.classList.toggle('active');
+  });
+});

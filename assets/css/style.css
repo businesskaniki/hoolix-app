@@ -24,13 +24,13 @@
   --rich-black-fogra-29-2: hsl(230, 14%, 8%);
   --rich-black-fogra-39: hsl(158, 29%, 5%);
   --granite-gray: hsl(0, 0%, 40%);
-  --go-green_50: hsla(200, 70%, 50%, 0.5);
-  --go-green_8: hsla(200, 70%, 50%, 0.08);
-  --go-green_5: hsla(200, 70%, 50%, 0.05);
+  --go-green_50: hsla(200, 100%, 55%, 0.5);
+  --go-green_8: hsla(200, 100%, 55%, 0.08);
+  --go-green_5: hsla(200, 100%, 55%, 0.05);
   --light-gray: hsl(0, 0%, 80%);
   --mint-cream: hsl(160, 100%, 98%);
   --cultured: hsl(0, 0%, 93%);
-  --go-green: hsl(200, 70%, 50%);
+  --go-green: hsl(200, 100%, 55%);
   --white: hsl(0, 0%, 100%);
   --jet: hsl(0, 0%, 18%);
 
@@ -366,9 +366,78 @@ body {
   opacity: 1;
 }
 
+/* DROPDOWN */
+
+.has-dropdown {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--rich-black-fogra-29-1);
+  width: 200px;
+  padding: 10px 10;
+  border-radius: var(--radius-5);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: var(--transition-1);
+  z-index: 5;
+  margin-top: 15px;
+}
+
+.dropdown li {
+  padding: 0;
+}
+
+.dropdown .navbar-link {
+  padding: 10px 10px;
+  color: var(--white);
+}
+
+.dropdown .navbar-link:hover {
+  background: var(--go-green);
+  color: var(--white);
+}
+
+/* SHOW DROPDOWN ON HOVER (DESKTOP) */
+.has-dropdown:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
 
 
+/* DROPDOWN ARROW */
 
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dropdown-icon {
+  font-size: 16px;
+  transition: var(--transition-1);
+}
+
+/* rotate arrow when open (hover desktop) */
+.has-dropdown:hover .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+/* rotate when active (mobile click) */
+.has-dropdown .dropdown.active ~ .dropdown-toggle .dropdown-icon {
+  transform: rotate(180deg);
+}
 
 /*-----------------------------------*\
   #HERO
@@ -447,7 +516,17 @@ body {
 
 
 
+.how-it-works-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  margin-top: 10px;
+  color: var(--granite-gray);
+}
 
+.how-it-works-content.active {
+  max-height: 200px; /* enough to show content */
+}
 
 /*-----------------------------------*\
   #ABOUT
@@ -545,7 +624,19 @@ body {
 
 
 
+/* EXPANDABLE CONTENT */
 
+.more-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  font-size: 1.4rem;
+}
+
+.service-card.active .more-content {
+  max-height: 250px;
+  margin-top: 10px;
+}
 
 /*-----------------------------------*\
   #FEATURES

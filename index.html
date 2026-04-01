@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eaglecore - Smart Ideas for your Brand are Here</title>
+  <title>EagleCore - Smart Ideas for your Brand are Here</title>
 
   <!-- 
     - favicon
@@ -42,12 +42,12 @@
   <header class="header" data-header>
     <div class="container">
 
-      <a href="#" class="logo">Eaglecore</a>
+      <a href="#" class="logo">EagleCore</a>
 
       <nav class="navbar" data-navbar>
 
         <div class="wrapper">
-          <a href="#" class="logo">Eaglecore</a>
+          <a href="#" class="logo">EagleCore</a>
 
           <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
             <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
@@ -64,8 +64,16 @@
             <a href="#about" class="navbar-link" data-nav-link>About</a>
           </li>
 
-          <li>
-            <a href="#services" class="navbar-link" data-nav-link>Services</a>
+          <li class="has-dropdown">
+            <a href="#services" class="navbar-link dropdown-toggle" data-nav-link>
+              Services
+              <ion-icon name="chevron-down-outline" class="dropdown-icon"></ion-icon>
+            </a>
+
+            <ul class="dropdown">
+              <li><a href="kenyan-services.html" class="navbar-link">Kenyan services</a></li>
+              <li><a href="international-services.html" class="navbar-link">foreign services</a></li>
+            </ul>
           </li>
 
           <li>
@@ -73,7 +81,7 @@
           </li>
 
           <li>
-            <a href="./contact-us.html" class="navbar-link" data-nav-link>Contact Us</a>
+            <a href="#" class="navbar-link" data-nav-link>Contact Us</a>
           </li>
 
         </ul>
@@ -107,26 +115,34 @@
 
           <div class="hero-content">
 
-            <p class="hero-subtitle has-before">Wellcome to Our Agency</p>
+            <p class="hero-subtitle has-before">One Stop Online Services Solution</p>
 
-            <h1 class="h1 hero-title">Smart Ideas for your Brand are Here</h1>
+            <h1 class="h1 hero-title">We Make It Easy for You</h1>
 
             <p class="hero-text">
-              Eaglecore is your one-stop online services solution for business registration, government compliance,
-              and immigration processing. We make Company Name Search & Registration, KRA eTIMS, NTSA eCitizen workflows,
-              SHA/CRB/NSSF compliance, and passport/visa support fast, reliable, and affordable.
+              Handling government services doesn’t have to be complicated. At Eaglecore Consultants Limited, we take care of your KRA, NTSA, business registration, Passport application and for our foreign clients we help with visa immigration needs — so you can focus on what matters most.
+              <br><br>
+              Get it done right the first time.
             </p>
 
             <div class="btn-group">
-              <a href="#" class="btn btn-primary">Discover More</a>
+              <a href="#services" class="btn btn-primary">Discover More</a>
 
-              <button class="flex-btn">
+              <button class="flex-btn" id="howItWorksBtn">
                 <div class="btn-icon">
                   <ion-icon name="play" aria-hidden="true"></ion-icon>
                 </div>
 
                 <span class="span">How it works</span>
               </button>
+            </div>
+            <div class="how-it-works-content" id="howItWorksContent">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+              </p>
             </div>
 
           </div>
@@ -156,26 +172,28 @@
 
           <div class="about-content">
 
-            <h2 class="h2-sm section-title">We create some things, Design for your success future.</h2>
+            <h2 class="h2-sm section-title"><strong>Your Trusted Service Shortcut</strong></h2>
 
             <p class="section-text">
-              Lorem Ipsum is simply dumm of free available in market the way printing and typesetting industry has been
-              the industrys
-              standard dummy text ever.
+              Eaglecore Consultants Limited makes KRA, NTSA, company registration and immigration services simple and fast. We handle the paperwork so your applications are done right the first time.
+            </p>
+
+            <p class="section-text">
+              From local government filings to visas and work permits, our support is reliable, efficient and built on professionalism.
             </p>
 
             <ul class="about-list">
 
               <li class="has-before">
-                Company Name Search & Registration (KRA eTIMS, NTSA eCitizen)
+                Company name search, registration and KRA/eTIMS support
               </li>
 
               <li class="has-before">
-                SHA Registration, CRB Report, NSSF Services and legal compliance support
+                Passport applications, certificates, renewals and TSC processing
               </li>
 
               <li class="has-before">
-                Passport & certification processing: ETA, visa extension, work permit, student visa, dependent pass
+                Visa, work permit, student visa and foreign immigration consultation
               </li>
 
             </ul>
@@ -210,121 +228,178 @@
 
           <p class="section-subtitle text-center">-What We Offer-</p>
 
-          <h2 class="h2 section-title text-center">Our Professional Immigration & Registration Services</h2>
+          <h2 class="h2 section-title text-center">Our Professional Services</h2>
 
           <p class="section-text text-center">
-            One-stop solution for company registration, KRA eTIMS, NTSA eCitizen, SHA registration, CRB reports, NSSF,
-            passport and visa applications, and online immigration consultation.
+            We provide fast, reliable and secure assistance for business registration, government services,
+            immigration processing and personal documentation.
           </p>
 
           <ul class="grid-list">
 
+            <!-- 1. BUSINESS & GOVERNMENT -->
             <li>
               <div class="service-card has-after">
 
                 <figure class="card-icon">
                   <img src="./assets/images/service-1.png" width="140" height="140" loading="lazy"
-                    alt="UI/UX Creative Design" class="img">
+                    alt="Company & Government Services" class="img">
                 </figure>
 
                 <div class="card-content">
 
-                  <h3 class="h3 card-title">Company & Government Services</h3>
+                  <h3 class="h3 card-title">Business & Government Services</h3>
 
                   <p class="card-text">
-                    Company name search and registration, KRA eTIMS, NTSA eCitizen, SHA registration, CRB reports, and
-                    NSSF services.
-                  </p>
+                    <strong>BRS Services</strong><br>
+                    Business registration & company setup<br>
+                    CR12, annual returns & director changes<br><br>
 
-                  <a href="#" class="btn-link">
-                    <span class="span">Read More</span>
+                    <strong>KRA Services</strong><br>
+                    KRA PIN, returns filing (VAT, PAYE, NIL)<br>
+                    Tax compliance certificates<br><br>
 
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
+
+                    <a href="#" class="btn-link read-more-btn">
+                      <span class="span">Read More</span>
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
+
+                  <div class="more-content">
+                    <p>
+
+                      <strong>NTSA Services</strong><br>
+                      Driving licence application & renewal<br>
+                      Vehicle ownership transfer & logbook services<br><br>
+
+                      We handle complete NTSA services including smart DL, duplicate licences, vehicle inspection,
+                      logbook transfer, PSV licensing and more. KRA services include tax filings, compliance,
+                      payment plans and business registrations.
+                    </p>
+                  </div>
 
                 </div>
 
               </div>
             </li>
 
+            <!-- 2. PASSPORT & CERTIFICATION -->
             <li>
               <div class="service-card has-after">
 
                 <figure class="card-icon">
-                  <img src="./assets/images/service-2.png" width="140" height="140" loading="lazy" alt="App Development"
-                    class="img">
+                  <img src="./assets/images/service-2.png" width="140" height="140" loading="lazy"
+                    alt="Passport Services" class="img">
                 </figure>
 
                 <div class="card-content">
 
-                  <h3 class="h3 card-title">Passport & Certification Services</h3>
+                  <h3 class="h3 card-title">Passport & Certification</h3>
 
                   <p class="card-text">
-                    Passport application, good conduct, birth/death certificate renewals, yellow fever card, and TSC
-                    registration.
+                    Passport application & renewal<br>
+                    Lost passport processing<br><br>
+
+                    Good conduct certificate<br>
+                    Birth & death certificates<br><br>
+
+                    Yellow fever card<br>
+                    TSC & marriage certificates
                   </p>
 
-                  <a href="#" class="btn-link">
+                  <a href="#" class="btn-link read-more-btn">
                     <span class="span">Read More</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
                   </a>
+
+                  <div class="more-content">
+                    <p>
+                      We assist with new, renewal and lost passport applications including documentation guidance.
+                      Civil registration services include birth certificates (child/adult/lost) and other legal
+                      documents.
+                    </p>
+                  </div>
 
                 </div>
 
               </div>
             </li>
 
+            <!-- 3. IMMIGRATION -->
             <li>
               <div class="service-card has-after">
 
                 <figure class="card-icon">
                   <img src="./assets/images/service-3.png" width="140" height="140" loading="lazy"
-                    alt="Professional Content Writer" class="img">
+                    alt="Immigration Services" class="img">
                 </figure>
 
                 <div class="card-content">
 
-                  <h3 class="h3 card-title">Foreign Immigration Services</h3>
+                  <h3 class="h3 card-title">Immigration Services</h3>
 
                   <p class="card-text">
-                    ETA application, visa extension, work permit processing, student visa application, dependent pass, and
-                    permanent residence.
+                    Visa applications (USA, Canada, Schengen, etc.)<br>
+                    ETA & visa extensions<br><br>
+
+                    Work permits & student visas<br>
+                    Dependant & special passes<br><br>
+
+                    Permanent residence<br>
+                    KRA PIN for foreigners
                   </p>
 
-                  <a href="#" class="btn-link">
+                  <a href="#" class="btn-link read-more-btn">
                     <span class="span">Read More</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
                   </a>
+
+                  <div class="more-content">
+                    <p>
+                      We provide full immigration support including visa processing, permit applications,
+                      foreigner tax registration and consultation to ensure smooth approval processes.
+                    </p>
+                  </div>
 
                 </div>
 
               </div>
             </li>
 
+            <!-- 4. ONLINE & SUPPORT -->
             <li>
               <div class="service-card has-after">
 
                 <figure class="card-icon">
-                  <img src="./assets/images/service-4.png" width="140" height="140" loading="lazy" alt="Graphic Design"
+                  <img src="./assets/images/service-4.png" width="140" height="140" loading="lazy" alt="Online Services"
                     class="img">
                 </figure>
 
                 <div class="card-content">
 
-                  <h3 class="h3 card-title">Online Immigration Consultation</h3>
+                  <h3 class="h3 card-title">Online & Support Services</h3>
 
                   <p class="card-text">
-                    Fast, secure, and convenient immigration consulting with KRA PIN registration for foreigners and online
-                    processing support.
+                    NSSF & SHA registration<br>
+                    CRB reports & clearance<br><br>
+
+                    Boma Yangu & Ardhi Sasa<br>
+                    AGPO & IFMIS registration<br><br>
+
+                    Secure consultation & support
                   </p>
 
-                  <a href="#" class="btn-link">
+                  <a href="#" class="btn-link read-more-btn">
                     <span class="span">Read More</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
                   </a>
+
+                  <div class="more-content">
+                    <p>
+                      We provide additional online government services including society registration,
+                      EACC applications, and end-to-end assistance to ensure fast and secure processing.
+                    </p>
+                  </div>
 
                 </div>
 
@@ -333,11 +408,13 @@
 
           </ul>
 
-          <a href="#" class="btn btn-primary">Get Started</a>
+          <a href="https://wa.me/2547XXXXXXXX?text=Hi%20EagleCore%2C%20I%20am%20interested%20in%20your%20services"
+            class="btn btn-primary" target="_blank">
+            Get Started
+          </a>
 
         </div>
       </section>
-
 
 
 
@@ -351,11 +428,11 @@
 
           <p class="section-subtitle text-center">-Why Choose Us-</p>
 
-          <h2 class="h2 section-title text-center">Fast, Reliable, Affordable</h2>
+          <h2 class="h2 section-title text-center">Reasons to Choose Us</h2>
 
           <p class="section-text text-center">
-            Eaglecore delivers trusted registration and immigration services with experienced staff, transparent pricing,
-            and end-to-end support.
+            EagleCore Enterprises makes company, passport and immigration services fast, reliable and simple.
+            We handle filings, documents and applications so you can focus on your business or travel plans.
           </p>
 
           <ul class="grid-list">
@@ -365,10 +442,10 @@
 
                 <data class="card-number" value="01">01</data>
 
-                <h3 class="h3 card-title">Complete Registration Support</h3>
+                <h3 class="h3 card-title">Expert Government Filing</h3>
 
                 <p class="card-text">
-                  Company and government compliance services handled from start to finish.
+                  Accurate company registration, KRA compliance, NTSA and eCitizen support.
                 </p>
 
               </div>
@@ -379,10 +456,10 @@
 
                 <data class="card-number" value="02">02</data>
 
-                <h3 class="h3 card-title">Fast Processing</h3>
+                <h3 class="h3 card-title">Passport & Certificate Help</h3>
 
                 <p class="card-text">
-                  Accelerated KRA, NTSA, and immigration workflows so you get results quickly.
+                  Passport applications, certificates, renewal documents and TSC registration.
                 </p>
 
               </div>
@@ -393,10 +470,10 @@
 
                 <data class="card-number" value="03">03</data>
 
-                <h3 class="h3 card-title">Trusted Immigration Advice</h3>
+                <h3 class="h3 card-title">Immigration Experience</h3>
 
                 <p class="card-text">
-                  Expert guidance for visa, work permit, and student immigration applications.
+                  Visa extension, work permit, student visa, special pass and residence applications.
                 </p>
 
               </div>
@@ -407,10 +484,10 @@
 
                 <data class="card-number" value="04">04</data>
 
-                <h3 class="h3 card-title">Transparent Pricing</h3>
+                <h3 class="h3 card-title">Secure Online Service</h3>
 
                 <p class="card-text">
-                  Clear cost estimates and no hidden fees for all services.
+                  Safe digital processing, clear updates and confidential handling of your documents.
                 </p>
 
               </div>
@@ -421,10 +498,10 @@
 
                 <data class="card-number" value="05">05</data>
 
-                <h3 class="h3 card-title">Compliance Guaranteed</h3>
+                <h3 class="h3 card-title">Dedicated Support</h3>
 
                 <p class="card-text">
-                  We ensure KRA, NTSA, CRB, and immigration requirements are fully met.
+                  Personal guidance from experienced consultants through every application step.
                 </p>
 
               </div>
@@ -435,10 +512,10 @@
 
                 <data class="card-number" value="06">06</data>
 
-                <h3 class="h3 card-title">Dedicated Support</h3>
+                <h3 class="h3 card-title">Affordable Convenience</h3>
 
                 <p class="card-text">
-                  Personalised onboarding and follow-up until your application is complete.
+                  Transparent pricing, fast turnarounds and end-to-end support for your peace of mind.
                 </p>
 
               </div>
@@ -646,7 +723,7 @@
 
         <div class="footer-brand">
 
-          <a href="#" class="logo">Eaglecore</a>
+          <a href="#" class="logo">EagleCore</a>
 
           <p class="footer-text">
             Lorem ipsum dolor sit amet consecte tur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
@@ -749,7 +826,7 @@
           <li class="footer-item">
             <ion-icon name="mail" aria-hidden="true"></ion-icon>
 
-            <a href="mailto:info@eaglecore.com" class="contact-link">info@eaglecore.com</a>
+            <a href="mailto:info@EagleCore.com" class="contact-link">info@EagleCore.com</a>
           </li>
 
           <li class="footer-item">
@@ -791,7 +868,7 @@
       <div class="container">
 
         <p class="copyright">
-          &copy; 2022 Eaglecore | All Rights Reserved by <a href="#" class="copyright-link">codewithsadee</a>
+          &copy; 2022 EagleCore | All Rights Reserved by <a href="#" class="copyright-link">codewithsadee</a>
         </p>
 
         <ul class="footer-bottom-list">
